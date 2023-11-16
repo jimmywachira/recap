@@ -5,25 +5,24 @@
  ?>
 
 <main class="bg-white p-2 m-2">
-<div>
-  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+<div class="relative isolate overflow-hidden text-black py-16 sm:py-24 lg:py-32" >
+<!-- div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3" -->
     <div class="max-w-2xl">
       <h2 class="text-3xl text-center font-bold tracking-tight text-black-900 sm:text-4xl"> our software development team:</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">
         Passionate, innovative, and customer-centric, our software development team is dedicated to delivering high-quality products that meet the needs of our users.
 </div>
 
-    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+    <ul role="list" class="grid gap-x-8 items-center gap-y-12 "> 
           <li>
          <div class="flex items-center gap-x-6">
-    <ul role="list" class="divide-y divide-black-100">
-
+    <ul role="list" class=" divide-y divide-black-50">
       <li class="flex justify-between gap-x-6 py-5">
         <div class="flex min-w-0 gap-x-4">
           <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix" alt="">
           <div class="min-w-0 flex-auto">
             <p class="text-sm font-semibold leading-6 text-gray-900">james</p>
-            <p class="mt-1 truncate text-xs leading-5 text-gray-500">michael.foster@example.com</p>
+            <p class="mt-1 truncate text-xs leading-5 text-gray-500">james@gmail.com</p>
           </div>
         </div>
         <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
@@ -35,8 +34,8 @@
         <div class="flex min-w-0 gap-x-4">
           <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://api.dicebear.com/7.x/adventurer/svg?seed=Toby" alt="">
           <div class="min-w-0 flex-auto">
-            <p class="text-sm font-semibold leading-6 text-gray-900">j.hamez</p>
-            <p class="mt-1 truncate text-xs leading-5 text-gray-500">j.hamez@example.com</p>
+            <p class="text-sm font-semibold leading-6 text-gray-900">hamez</p>
+            <p class="mt-1 truncate text-xs leading-5 text-gray-500">hamez@gmail.com</p>
           </div>
         </div>
         <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
@@ -53,29 +52,15 @@
         <div class="flex min-w-0 gap-x-4">
           <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://api.dicebear.com/7.x/adventurer/svg?seed=coco" alt="">
           <div class="min-w-0 flex-auto">
-            <p class="text-sm font-semibold leading-6 text-gray-900"> w.ndegz </p>
-            <p class="mt-1 truncate text-xs leading-5 text-gray-500"> lw.ndegz@example.com </p>
+            <p class="text-sm font-semibold leading-6 text-gray-900"> ndegwa </p>
+            <p class="mt-1 truncate text-xs leading-5 text-gray-500"> jw.ndegwa@gmail.com </p>
           </div>
         </div>
         <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-          <p class="text-sm leading-6 text-gray-900">full-stack Developer</p>
+          <p class="text-sm leading-6 text-gray-900"> Developer</p>
           <p class="mt-1 text-xs leading-5 text-gray-500"> Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
         </div>
       </li>
-      <li class="flex justify-between gap-x-6 py-5">
-        <div class="flex min-w-0 gap-x-4">
-          <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://api.dicebear.com/7.x/adventurer/svg?seed=coco" alt="">
-          <div class="min-w-0 flex-auto">
-            <p class="text-sm font-semibold leading-6 text-gray-900"> j.wn </p>
-            <p class="mt-1 truncate text-xs leading-5 text-gray-500"> j.wn@example.com </p>
-          </div>
-        </div>
-        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-          <p class="text-sm leading-6 text-gray-900"> Designer</p>
-          <p class="mt-1 text-xs leading-5 text-gray-500"> Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
-        </div>
-      </li>
-  
 </ul>
 </div>
 

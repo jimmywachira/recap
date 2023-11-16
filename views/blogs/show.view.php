@@ -4,13 +4,13 @@
  #require base_path( 'views/partials/banner.php');
 ?>
 
-<main>
+<main class="p-4 m-4">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <div class="mt-4 text-lg text-center leading-8">
         <h1> Grow your business with our expert advice </h1>
       </div>
 
-      <div class="mt-5 grid grid-cols-1 gap-x-8 gap-y-16 border-t border-black-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div class="mt-5 grid grid-cols-1 gap-x-8 gap-y-16 border-t border-black-200 pt-5">
         <article class="flex max-w-xl flex-col items-start justify-between">
           <div class="flex items-center gap-x-4 text-xs">
             <time datetime="2020-03-16" class="text-black-500">
@@ -26,9 +26,7 @@
                 <?= htmlspecialchars($post['title']) ;?>
               </h2>
               </a>
-              <a href="#">
             <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
-          </a> 
             </h2>
             <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
               <?= htmlspecialchars($post['body']) ;?>

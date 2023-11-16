@@ -1,5 +1,4 @@
 <?php
 
 logout();
-
 redirect('/');

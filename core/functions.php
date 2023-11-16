@@ -42,10 +42,10 @@ function redirect($path){
 
 function login($user){
     $_SESSION['user'] = ['email' => $user['email' ]];
-    session_regenerate_id(true);
+    session_regenerate_id(true);    //update currnt session id wth newly generated one
 }
 
-function logout(){
+function logout(){  
     $_SESSION = [];
     session_destroy();
 

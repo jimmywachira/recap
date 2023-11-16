@@ -10,24 +10,25 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 $errors=[];
+
 if(!Validator::email($email)){
     $errors['email']= 'provide a valid email';
 }
 
-if(!Validator::string($password,7,255)){
+if(!Validator::string($password,7,21)){
     $errors['password']= 'provide a password of >7 chars';
  }
 
 if(!empty($errors)){
-   return view('registration/create.view.php', ['errors'=> $errors]);
+   return view('registration/create.view.php',
+    ['errors'=> $errors]);
     }
-
 
 $query = 'SELECT * from users where email = :email';
 $user = $db->query($query , ['email' =>$email])->find();
 
 if($user){
-    header('location: /');
+    header('location: /login');
       exit(); 
     } 
 
