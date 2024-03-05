@@ -29,7 +29,7 @@ class Router
     }
 
     public function delete($uri, $controller){
-        return $this->add('DELETE', $uri, $controller);
+        return $this->add( 'DELETE', $uri, $controller);
     }
 
     public function patch($uri, $controller){
@@ -41,7 +41,7 @@ class Router
     }
 
     public function only($key){
-        $this->routes[array_key_last($this->routes)]['middleware'] = $key;
+        $this->routes[array_key_last($this->routes)] ['middleware'] = $key;
         return $this;
     }
 
@@ -50,7 +50,6 @@ class Router
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
                 
                 Middleware::resolve($route['middleware']);
-
                 return require base_path('Http/controllers/' . $route['controller']);
             }
         }
@@ -65,7 +64,7 @@ class Router
     protected function abort($code = 404){
         http_response_code($code);
 
-        require base_path("views/{$code}.php");
+        require base_path("views/{$code}.php ");
 
         die();
     }

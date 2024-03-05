@@ -3,10 +3,10 @@
 namespace Http\Forms;
 
 use Core\ValidationException;
-use Core\Validator;
+use Core\Validator; 
 
 class LoginForm {
-    
+
     protected $errors = [];
 
     public function __construct(public array $attributes){
@@ -39,7 +39,6 @@ class LoginForm {
 
     public function error($field, $message){
         $this->errors[$field] = $message;
-
         return $this;
     }
 }

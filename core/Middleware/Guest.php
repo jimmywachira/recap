@@ -2,10 +2,9 @@
 
 namespace Core\Middleware;
   
-    public function handle(){
+    public function handle (){
             if($_SESSION['user'] ?? false ){
                 header('location : /');
                 exit();
             }
     }
-    

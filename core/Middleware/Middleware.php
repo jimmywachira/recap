@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Middleware; 
+namespace Core\Middleware;
 
 class Middleware{
     public const MAP = [
